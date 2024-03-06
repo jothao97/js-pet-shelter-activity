@@ -19,18 +19,27 @@ document.addEventListener("DOMContentLoaded", function() {
       petList.innerHTML = ""; // Clear the previous pet list
   
       // Loop through each pet in the shelter and create a list item for each
-      for(       ){
-      
-
+      for( let i=0; i < petShelter.length; i++){
+        let pet = petShelter[i];
+        let petItem = document.createElement('li');
+        petItem.textContent = `${pet.name}: ${pet.type} ${pet.age}`
+        petList.appendchild (petItem);
+      }
+    }
 
         petList.appendChild(  ); //will assist with adding each pet item to be shown in the list on the browser
      }
     }
+  
     // Add some sample pets to the shelter
-    addPet("Fido", "Dog", 3); //example
+    addPet("Fido", "Hamster", 3); //example
+    addPet("Twyla", "Dog", 2);
+    addPet("Penny", "cat", 3);
+    addPet("Nita", "fish", 1);
+    addPet("Kora", "Guinea Pig", 5);
     
     // Display the pets in the shelter
-  
+    displayPets();
 
     //STRETCH GOALS:
     // Function to check if the pet shelter has animals that need homes (based on how many animals are in the shelter)
