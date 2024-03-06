@@ -23,13 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
         let pet = petShelter[i];
         let petItem = document.createElement('li');
         petItem.textContent = `${pet.name}: ${pet.type} ${pet.age}`
-        petList.appendchild (petItem);
+        petList.appendchild (petItem);      //will assist with adding each pet item to be shown in the list on the browser
+
       }
     }
-
-        petList.appendChild(  ); //will assist with adding each pet item to be shown in the list on the browser
-     }
-    }
+  
   
     // Add some sample pets to the shelter
     addPet("Fido", "Hamster", 3); //example
